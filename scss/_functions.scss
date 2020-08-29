@@ -1,0 +1,5 @@
+@function progression($currentValue, $height, $borderSize) {
+  @return calc(
+    #{$currentValue} - calc(calc(#{$height} / 2) + calc(#{$borderSize} / 2))
+  );
+}
